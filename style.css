@@ -1,29 +1,82 @@
-/* Write Your CSS Below 
-Colors: 
-- rgb(243, 183, 106)
-- yellow
-- rgb(241, 117, 0)
-- red
-- #f3b76a
-- #f17500
-- #0d6e00
-- #6d00fb
-- #dbff39
-- #74c9f1
-- #fb4040
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-Sizes: 
-- 100%
-- 70%
-- auto
-- 1.5em
-- 3rem
-- .5em
+body {
+  font-family: 'Copperplate', sans-serif; /* Default font */
+  background-image: url('https://i.pinimg.com/236x/d6/3f/56/d63f563519df0ece564b82c72e9e306c.jpg');
+  background-size: cover;
+  text-align: center;
+}
 
-Font: 
-- Copperplate (You can also use any font that you'd like!)
+/* Header Styles */
+#main-header {
+  background-color: #f3b76a;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #fb4040;
+}
 
-Images: 
-- "https://i.pinimg.com/236x/d6/3f/56/d63f563519df0ece564b82c72e9e306c.jpg"
-    - (You may use any image you would like for the background!)
-*/
+/* Row and Section Styles */
+#row1,
+#row2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#row1-section1,
+#row2-section1 {
+  margin-bottom: 10px;
+}
+
+#row1-section2,
+#row2-section2 {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #0d6e00;
+  font-size: 1.5em;
+}
+
+/* Image Styles */
+img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Styles */
+a {
+  color: #6d00fb;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #fb4040;
+}
+
+a:hover {
+  color: #dbff39;
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  #row1,
+  #row2 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #row1-section2,
+  #row2-section2 {
+    text-align: left;
+  }
+}
